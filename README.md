@@ -18,17 +18,21 @@ IMPLEMENTATION :
 We have constructed various models which differ in their latent representation of the thermal images. Following are the latent represenations for the Models :
 
 Model 1 - LATENT REPRESENTATION : 64 x 64 x 32
+
 Model Architecture : 
 c128,s1-4 ----> (Encoder) c64,s2-32 ------> (Decoder) dc128,s2-16 -------> c128,s1-4 
 
 Model 2 - LATENT REPRESENTATION : 32 x 32 x 64
+
 Model Architecture : 
 c128,s1-4 ----> (Encoder) c64,s2-32 ; c32,s2-64 ------> (Decoder) dc64,s2-32 ; dc128,s2-16 -------> c128s1-4 
 
 Model 3 - LATENT REPRESENTATION : 16 x 16 x 128
+
 Model Architecture : 
 c128,s1-4 ----> (Encoder) c64,s2-32 ; c32,s2-64 ; c16,s2-128 ------> (Decoder) dc32,s2-64 ; dc64,s2-32 ; dc128,s2-16  -------> c128s1-4 
 
 Model 4 - LATENT REPRESENTATION : 8 x 8 x 256
+
 Model Architecture : 
 c128,s1-4 ----> (Encoder) c64,s2-32 ; c32,s2-64 ; c16,s2-128 ; c8,s2-256 ------> (Decoder) dc16,s2-128 ; dc32,s2-64 ; dc64,s2-32 ; dc128,s2-16  -------> c128s1-4 
