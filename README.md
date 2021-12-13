@@ -35,4 +35,7 @@ c128,s1-4 ----> (Encoder) c64,s2-32 ; c32,s2-64 ; c16,s2-128 ------> (Decoder) d
 Model 4 - LATENT REPRESENTATION : 8 x 8 x 256
 
 Model Architecture : 
-c128,s1-4 ----> (Encoder) c64,s2-32 ; c32,s2-64 ; c16,s2-128 ; c8,s2-256 ------> (Decoder) dc16,s2-128 ; dc32,s2-64 ; dc64,s2-32 ; dc128,s2-16  -------> c128s1-4 
+c128,s1-4 ----> (Encoder) c64,s2-32 ; c32,s2-64 ; c16,s2-128 ; c8,s2-256 ------> (Decoder) dc16,s2-128 ; dc32,s2-64 ; dc64,s2-32 ; dc128,s2-16  -------> c128s1-4
+
+Notation:
+cksl-m represents : k x k convolutional layer-LeakyRelu-Batch Norm-Dropout layer with m filters/feature maps & stride l
